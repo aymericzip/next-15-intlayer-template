@@ -27,7 +27,7 @@ export const LocaleSwitcher: FC = () => {
       <ol
         id="localePopover"
         popover="auto"
-        className="bg-slate-200/50 rounded-lg left-auto top-auto right-20 bottom-5"
+        className="bg-white/80 rounded-lg left-auto top-auto right-20 bottom-5"
       >
         {availableLocales.map((localeItem) => (
           <li key={localeItem}>
@@ -39,9 +39,9 @@ export const LocaleSwitcher: FC = () => {
                 e.preventDefault();
                 setLocale(localeItem);
               }}
-              className="flex flex-row items-center justify-between gap-3 px-2 py-1"
+              className="flex flex-row items-center justify-between gap-3 p-1"
             >
-              <div className="flex flex-row items-center justify-between gap-3 px-2 py-1">
+              <div className="flex flex-row items-center justify-between gap-3 w-full px-2 py-1 hover:bg-white/50 rounded-md">
                 <div className="flex flex-col text-nowrap">
                   <span dir={getHTMLTextDir(localeItem)} lang={localeItem}>
                     {/* Language in current Locale - e.g. Francés with current locale set to Locales.SPANISH */}
