@@ -41,7 +41,7 @@ Intlayer supports Next.js versions **12, 13, 14**, and **15**, making it versati
 ## Useful Links
 
 - [Intlayer GitHub Repository](https://github.com/aypineau/intlayer): Explore the source code and contribute.
-- [Intlayer Documentation](https://intlayer.org/doc): Learn more about setup, features, and advanced use cases.
+- [Intlayer Documentation Next.js](https://intlayer.org/doc/environment/nextjs): Learn more about setup, features, and advanced use cases.
 - [Intlayer Smart Docs](https://intlayer.org/doc/chat): Dive into the intlayer smart docs.
 - [Contribution Guide](https://github.com/aypineau/intlayer/blob/main/CONTRIBUTING.md): Guidelines for contributing to Intlayer.
 - [Issues and Bug Reports](https://github.com/aypineau/intlayer/issues): Report bugs or suggest improvements.
