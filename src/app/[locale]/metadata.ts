@@ -1,12 +1,12 @@
 import { getMultilingualUrls } from "intlayer";
 import type { Metadata } from "next";
-import { getIntlayer, type LocalParams } from "next-intlayer";
+import { getIntlayer, LocalPromiseParams } from "next-intlayer";
 
 const URL = "/";
 
 export const generateMetadata = async ({
   params,
-}: LocalParams): Promise<Metadata> => {
+}: LocalPromiseParams): Promise<Metadata> => {
   const { locale } = await params;
 
   /**
