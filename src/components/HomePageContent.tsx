@@ -1,26 +1,30 @@
 import Image from "next/image";
+import { useIntlayer } from "next-intlayer/server";
+import { LocaleSwitcher } from "./LocaleSwitcher";
 
-export default function Home() {
+export const HomePageContent = () => {
+  const content = useIntlayer("home");
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
-          alt="Next.js logo"
+          alt={content.logoAlt.value}
           width={180}
           height={38}
           priority
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
-            Get started by editing{" "}
+            {content.getStarted}{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
+              {content.filePath}
             </code>
             .
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>{content.saveChanges}</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
@@ -37,7 +41,7 @@ export default function Home() {
               width={20}
               height={20}
             />
-            Deploy now
+            {content.deployNow}
           </a>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
@@ -45,10 +49,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            {content.readDocs}
           </a>
         </div>
+        <LocaleSwitcher />
       </main>
+
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -63,7 +69,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+          {content.footerLinks.learn}
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -78,7 +84,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Examples
+          {content.footerLinks.examples}
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -93,9 +99,9 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          {content.footerLinks.goToNextJs}
         </a>
       </footer>
     </div>
   );
-}
+};
