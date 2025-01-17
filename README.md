@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), and [Intlayer](https://intlayer.org).
 
 ## Getting Started
 
@@ -16,18 +16,49 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/[locale]/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
+
+## What is Intlayer?
+
+**Intlayer** is an open-source internationalization (i18n) library designed to streamline the process of building multilingual applications. It integrates seamlessly with **Next.js 15**, supporting the latest features like the **App Router** and **Server Components**, and is optimized for use with [**Turbopack**](https://nextjs.org/docs/architecture/turbopack).
+
+### Key Features
+
+- **Component-Level Translations**: Manage translations declaratively within components.
+- **Dynamic Metadata Localization**: Localize page titles, descriptions, and other metadata dynamically.
+- **Server and Client-Side Compatibility**: Access translations across both environments effortlessly.
+- **TypeScript Support**: Autogenerate types for enhanced autocompletion and error detection.
+- **Advanced Features**: Includes dynamic locale detection, route localization, and middleware for seamless user experience.
+
+### Supported Versions
+
+Intlayer supports Next.js versions **12, 13, 14**, and **15**, making it versatile for both legacy and modern projects.
+
+---
+
+## Useful Links
+
+- [Intlayer GitHub Repository](https://github.com/aypineau/intlayer): Explore the source code and contribute.
+- [Intlayer Documentation](https://intlayer.org/doc): Learn more about setup, features, and advanced use cases.
+- [Intlayer Smart Docs](https://intlayer.org/doc/chat): Dive into the intlayer smart docs.
+- [Contribution Guide](https://github.com/aypineau/intlayer/blob/main/CONTRIBUTING.md): Guidelines for contributing to Intlayer.
+- [Issues and Bug Reports](https://github.com/aypineau/intlayer/issues): Report bugs or suggest improvements.
+- [Privacy Notice](https://github.com/aypineau/intlayer/blob/main/PRIVACY.md): Learn how Intlayer handles user data.
+
+---
 
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - An interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+---
 
 ## Deploy on Vercel
 
