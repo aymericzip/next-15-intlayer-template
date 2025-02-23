@@ -1,6 +1,7 @@
 import { getMultilingualUrls } from "intlayer";
 import type { Metadata } from "next";
-import { getIntlayer, LocalPromiseParams } from "next-intlayer";
+import { LocalPromiseParams } from "next-intlayer";
+import { getIntlayer } from "intlayer";
 
 const URL = "/";
 

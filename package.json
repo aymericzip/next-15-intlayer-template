@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "intlayer": "^3.5.11",
+    "intlayer": "^5.1.5",
     "next": "15.1.4",
-    "next-intlayer": "^3.5.11",
+    "next-intlayer": "^5.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
