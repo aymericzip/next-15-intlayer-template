@@ -4,9 +4,9 @@ const serverComponentContent: Dictionary = {
   key: "server-component",
   content: {
     test: t({
-      en: "Hello World",
-      fr: "Bonjour le monde",
-      es: "Hola Mundo",
+      en: "Hover over me to edit",
+      fr: "Survolez-moi pour modifier",
+      es: "Pasa el cursor sobre mí para editar",
     }),
   },
 };

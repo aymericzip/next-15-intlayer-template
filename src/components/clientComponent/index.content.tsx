@@ -1,13 +1,12 @@
 import { Dictionary, t } from "intlayer";
-import React, { ReactNode } from "react";
 
 const clientComponentContent: Dictionary = {
   key: "client-component",
   content: {
-    test: t<ReactNode>({
-      en: "Hello World",
-      fr: "Bonjour le monde",
-      es: "Hola Mundo",
+    test: t({
+      en: "Hover over me to edit",
+      fr: "Survolez-moi pour modifier",
+      es: "Pasa el cursor sobre mí para editar",
     }),
   },
 };
