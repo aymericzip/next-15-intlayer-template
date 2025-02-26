@@ -1,4 +1,4 @@
-import { type IConfigLocales, getTranslationContent } from "intlayer";
+import { type IConfigLocales, getTranslation } from "intlayer";
 import type { Metadata } from "next";
 import type { LocalParams, LocalPromiseParams } from "next-intlayer";
 
@@ -6,8 +6,7 @@ export const generateMetadata = async ({
   params,
 }: LocalPromiseParams): Promise<Metadata> => {
   const { locale } = await params;
-  const t = <T>(content: IConfigLocales<T>) =>
-    getTranslationContent(content, locale);
+  const t = <T>(content: IConfigLocales<T>) => getTranslation(content, locale);
 
   return {
     title: t<string>({

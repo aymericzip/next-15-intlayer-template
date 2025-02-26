@@ -1,13 +1,13 @@
-import { DeclarationContent, t } from "intlayer";
+import { Dictionary, t } from "intlayer";
 import React, { ReactNode } from "react";
 
-const clientComponentContent: DeclarationContent = {
+const clientComponentContent: Dictionary = {
   key: "client-component",
   content: {
     test: t<ReactNode>({
-      en: <p>Hello World</p>,
-      fr: <p>Bonjour le monde</p>,
-      es: <p>Hola Mundo</p>,
+      en: "Hello World",
+      fr: "Bonjour le monde",
+      es: "Hola Mundo",
     }),
   },
 };

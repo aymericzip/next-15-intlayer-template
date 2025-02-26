@@ -1,6 +1,6 @@
-import { DeclarationContent, t } from "intlayer";
+import { Dictionary, t } from "intlayer";
 
-const serverComponentContent: DeclarationContent = {
+const serverComponentContent: Dictionary = {
   key: "server-component",
   content: {
     test: t({
